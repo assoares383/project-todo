@@ -1,16 +1,14 @@
 interface Todo {
-  id: number;
-  title: string;
+  text: string;
   completed: boolean;
 }
 
-class TodoList {
+export class TodoList {
   private todos: Todo[] = [];
 
-  addTodo(title: string): void {
+  addTodo(text: string): void {
     const todo: Todo = {
-      id: Date.now(),
-      title,
+      text,
       completed: false
     };
     this.todos.push(todo);
@@ -20,17 +18,10 @@ class TodoList {
     return this.todos;
   }
 
-  toggleTodo(id: number): void {
-    const todo = this.todos.find(t => t.id === id);
-    if (todo) {
-      todo.completed = !todo.completed;
+  toggleTodo(index: number): void {
+    if (index < 0 || index >= this.todos.length) {
+      throw new Error('Tarefa não encontrada');
     }
+    this.todos[index].completed = !this.todos[index].completed;
   }
 }
-
-// Exemplo de uso
-const todoList = new TodoList();
-todoList.addTodo("Implementar TypeScript");
-todoList.addTodo("Configurar ESLint");
-
-console.log("Lista de Tarefas:", todoList.getTodos());
