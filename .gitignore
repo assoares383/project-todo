@@ -1,27 +1,49 @@
-# Dependencies
+# Dependências
 node_modules/
 
-# Build
+# Arquivos de build
 dist/
+build/
 
-# Environment
+# Arquivos de ambiente
 .env
 .env.local
 .env.*.local
 
-# IDE
-.idea/
-.vscode/
-*.sublime-workspace
-*.sublime-project
-
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# System Files
+# Cobertura de testes
+coverage/
+.nyc_output/
+
+# IDEs e editores
+.idea/
+.vscode/
+*.swp
+*.swo
 .DS_Store
 Thumbs.db
+
+# Cache
+.npm/
+.eslintcache
+.tsbuildinfo
+
+# Arquivos temporários
+temp/
+tmp/
+*.tmp
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Outros
+*.pid
+*.seed
+*.pid.lock
