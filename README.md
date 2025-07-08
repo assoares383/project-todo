@@ -1,6 +1,6 @@
 # Project Todo
 
-Um projeto de lista de tarefas com TypeScript, ESLint, Prettier e Git Hooks.
+Um projeto de lista de tarefas com TypeScript, ESLint, Prettier, Git Hooks e Vitest.
 
 ## Pré-requisitos
 
@@ -44,6 +44,12 @@ O projeto já está configurado com:
 - commit-msg: valida mensagens de commit
 - pre-push: executa testes
 
+### Vitest
+- Framework de testes moderno e rápido
+- Suporte nativo a TypeScript
+- Cobertura de código com v8
+- Configuração em `vitest.config.ts`
+
 ## Scripts Disponíveis
 
 ```bash
@@ -67,6 +73,15 @@ npm run lint:fix
 
 # Formatar código
 npm run format
+
+# Executar testes
+npm test
+
+# Executar testes em modo watch
+npm run test:watch
+
+# Gerar relatório de cobertura de testes
+npm run test:coverage
 ```
 
 ## Padrões de Commit
@@ -98,7 +113,8 @@ Tipos permitidos:
 ├── .husky/        # Configurações do Husky
 ├── .eslintrc.json # Configuração do ESLint
 ├── .prettierrc    # Configuração do Prettier
-└── tsconfig.json  # Configuração do TypeScript
+├── tsconfig.json  # Configuração do TypeScript
+└── vitest.config.ts # Configuração do Vitest
 ```
 
 ## Boas Práticas
@@ -117,3 +133,8 @@ Tipos permitidos:
    - Crie branches para novas features
    - Faça merge apenas após revisão
    - Mantenha branches atualizadas
+
+4. **Testes**
+   - Escreva testes para novas funcionalidades
+   - Mantenha a cobertura de código alta
+   - Execute os testes antes de commits
