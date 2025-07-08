@@ -9,7 +9,7 @@ export class TodoList {
   addTodo(text: string): void {
     const todo: Todo = {
       text,
-      completed: false
+      completed: false,
     };
     this.todos.push(todo);
   }
