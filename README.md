@@ -10,12 +10,14 @@ Um projeto de lista de tarefas com TypeScript, ESLint, Prettier, Git Hooks e Vit
 ## Instalação
 
 1. Clone o repositório:
+
 ```bash
 git clone <url-do-repositorio>
 cd project-todo
 ```
 
 2. Instale as dependências:
+
 ```bash
 npm install
 ```
@@ -25,26 +27,31 @@ npm install
 O projeto já está configurado com:
 
 ### TypeScript
+
 - Configuração em `tsconfig.json`
 - Verificação de tipos estrita
 - Compilação para JavaScript moderno
 
 ### ESLint
+
 - Regras para TypeScript
 - Integração com Prettier
 - Verificação de código em tempo real
 
 ### Prettier
+
 - Formatação consistente de código
 - Integração com ESLint
 - Configurações personalizadas
 
 ### Git Hooks (usando Husky)
+
 - pre-commit: executa lint-staged
 - commit-msg: valida mensagens de commit
 - pre-push: executa testes
 
 ### Vitest
+
 - Framework de testes moderno e rápido
 - Suporte nativo a TypeScript
 - Cobertura de código com v8
@@ -93,6 +100,7 @@ O projeto segue o padrão Conventional Commits. As mensagens devem seguir o form
 ```
 
 Tipos permitidos:
+
 - feat: nova funcionalidade
 - fix: correção de bug
 - docs: documentação

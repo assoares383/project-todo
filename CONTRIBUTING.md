@@ -11,18 +11,21 @@
 ## Padrões de Código
 
 ### TypeScript
+
 - Use tipos explícitos quando não for óbvio
 - Evite o uso de `any`
 - Utilize interfaces para definir contratos
 - Mantenha as funções pequenas e focadas
 
 ### Testes
+
 - Escreva testes para toda nova funcionalidade
 - Mantenha a cobertura de código acima de 80%
 - Use descrições claras nos testes
 - Organize os testes em blocos lógicos
 
 ### Commits
+
 Seguimos o padrão Conventional Commits:
 
 ```
@@ -34,6 +37,7 @@ Seguimos o padrão Conventional Commits:
 ```
 
 Tipos permitidos:
+
 - feat: nova funcionalidade
 - fix: correção de bug
 - docs: documentação
@@ -43,6 +47,7 @@ Tipos permitidos:
 - chore: manutenção
 
 ### Estrutura de Arquivos
+
 ```
 src/
 ├── interfaces/     # Interfaces e tipos
@@ -65,6 +70,7 @@ src/
 ## Reportando Bugs
 
 Ao reportar bugs, inclua:
+
 - Descrição clara do problema
 - Passos para reproduzir
 - Comportamento esperado
@@ -75,6 +81,7 @@ Ao reportar bugs, inclua:
 ## Sugerindo Melhorias
 
 Ao sugerir melhorias:
+
 - Descreva o comportamento atual
 - Explique qual comportamento você gostaria de ver
 - Explique por que essa melhoria seria útil
@@ -82,6 +89,7 @@ Ao sugerir melhorias:
 ## Dúvidas
 
 Se tiver dúvidas:
+
 1. Verifique a documentação
 2. Procure por issues similares
 3. Abra uma nova issue com a tag 'question'
