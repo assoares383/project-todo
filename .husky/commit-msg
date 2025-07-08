@@ -1,0 +1,15 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+commit_msg_file=$1
+commit_msg=$(cat $commit_msg_file)
+
+commit_pattern="^(feat|fix|docs|style|refactor|test|chore|perf|ci|build|revert)(\(.+\))?: .{1,}$"
+
+if ! echo "$commit_msg" | grep -E "$commit_pattern" > /dev/null; then
+  echo "❌ Formato de commit inválido."
+  echo "✅ Formato correto: <tipo>(escopo opcional): <descrição>"
+  echo "💡 Tipos permitidos: feat, fix, docs, style, refactor, test, chore, perf, ci, build, revert"
+  echo "📝 Exemplo: feat(auth): adiciona autenticação com Google"
+  exit 1
+fi
